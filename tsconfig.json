@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,                               /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "resolveJsonModule": true,                           /* Enable importing .json files. */
+    "outDir": "dist",
+    "baseUrl": ".src",
+    "rootDirs": ["src"],
+    "lib": ["es2020"],
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": ["node"]
+  },
+}

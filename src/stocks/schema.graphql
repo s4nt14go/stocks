@@ -1,0 +1,47 @@
+type Stock {
+  lastUpdated: String!
+  change: Float!
+  price: Float!
+  name: String!
+  symbol: String!
+}
+
+type Portfolio {
+  symbol: String!
+  quantity: Int!
+}
+
+type PurchaseResult {
+  status: String!
+  errors: [String!]
+  quantity: Int!
+  user: ID!
+  symbol: String!
+  price: Float!
+  purchaseId: ID
+}
+type Report {
+  day: String!
+  successes: Int!
+  failures: Int!
+  purchaseResults: [PurchaseResult!]
+}
+
+type Query {
+  getStocks: [Stock!]
+  getPortfolio(
+    user: ID!
+  ): [Portfolio!]
+  dailyReport(
+    day: String!
+  ): Report!
+}
+
+type Mutation {
+  purchase(
+    user: ID!
+    symbol: String!
+    quantity: Int!
+    price: Float!
+  ): ID!
+}

@@ -1,0 +1,16 @@
+{
+  "UsersInDb": [
+    {
+      "id": "00ad8920-c36d-11ee-8adf-3f66c88fcbdd",
+      "name": "John",
+      "created_at" : "2024-02-24T00:00:00.000Z",
+      "updated_at" : "2024-02-25T00:00:00.000Z"
+    },
+    {
+      "id": "01a82ed0-c39a-11ee-8adf-3f66c88fcbdd",
+      "name": "Steve",
+      "created_at" : "2024-02-26T00:00:00.000Z",
+      "updated_at" : "2024-02-27T00:00:00.000Z"
+    }
+  ]
+}
